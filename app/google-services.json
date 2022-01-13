@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "379512360988",
+    "project_id": "effoapp2021v1",
+    "storage_bucket": "effoapp2021v1.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:379512360988:android:987327f30dd6b0cd984fd9",
+        "android_client_info": {
+          "package_name": "com.ftg2021.effo2021V1"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "379512360988-rau0tbrseukces5ookghqe4reil867o8.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBugUSG68OIgBpierFRPoVDZxR7uANVeMw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "379512360988-rau0tbrseukces5ookghqe4reil867o8.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/news_frame_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+
+    <FrameLayout
+        android:id="@+id/news_hide_layout"
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+        >
+
+    <FrameLayout
+        android:id="@+id/images_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+
+        <ImageView
+            android:id="@+id/news_image"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/image_size"
+            android:scaleType="fitXY" />
+
+        <FrameLayout
+            android:id="@+id/image_layout"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/image_size"
+            android:orientation="vertical">
+
+
+            <FrameLayout
+                android:id="@+id/fl_shadow_container"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_gravity="bottom"
+                android:background="@drawable/bg_overlay">
+
+
+            </FrameLayout>
+
+
+        </FrameLayout>
+
+    </FrameLayout>
+
+    <RelativeLayout
+        android:id="@+id/image_layR"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/image_layout"
+        android:layout_gravity="top"
+        android:paddingTop="25dp"
+        android:layout_marginTop="250dp">
+
+        <LinearLayout
+            android:id="@+id/news_headingLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/news_heading"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="5dp"
+                android:layout_weight="0.8"
+                android:gravity="start"
+                android:padding="6dp"
+                android:text="@string/app_name"
+                android:textColor="#0000EE"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <RelativeLayout
+                android:id="@+id/shareButton"
+                android:layout_width="50dp"
+                android:layout_height="40dp"
+                android:layout_below="@+id/news_source"
+                android:layout_gravity="center"
+                android:layout_marginRight="10dp"
+                android:layout_weight="0.2"
+                android:background="@drawable/nav_background_curved"
+                android:backgroundTint="#870000">
+
+                <ImageView
+                    android:id="@+id/shareIcon"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_centerInParent="true"
+                    android:background="@drawable/ic_share"
+                    android:backgroundTint="@color/white"
+                    android:padding="5dp" />
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/news_description"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/news_headingLayout"
+            android:layout_marginStart="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="0dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginBottom="5dp"
+            android:gravity="start"
+            android:textColor="#C3242425"
+            android:textSize="18sp"
+            android:textStyle="normal" />
+
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/news_source"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/news_description"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="0dp"
+            android:gravity="start"
+            android:text="@string/app_name"
+            android:textColor="#989393"
+            android:textSize="13sp"
+            android:textStyle="italic" />
+
+        <LinearLayout
+            android:id="@+id/news_postedAtLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/news_source"
+            android:layout_marginLeft="20dp"
+            android:gravity="start"
+            android:orientation="horizontal"
+            android:visibility="gone">
+
+            <ImageView
+                android:layout_width="10dp"
+                android:layout_height="10dp"
+                android:layout_gravity="center"
+                android:background="@drawable/ic_clock"
+                android:backgroundTint="#292828" />
+
+
+            <TextView
+                android:id="@+id/news_postedAt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:padding="2dp"
+                android:textColor="#989393"
+                android:textSize="13sp"
+                android:textStyle="italic" />
+
+
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+
+    </FrameLayout>
+
+
+</FrameLayout>

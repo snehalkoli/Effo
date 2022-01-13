@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/parentLinearLayoutAllJobs"
+    >
+    <com.google.android.material.card.MaterialCardView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:cardCornerRadius="10dp"
+        app:cardElevation="5dp"
+        app:cardUseCompatPadding="true"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginVertical="10dp"
+            >
+
+            <TextView
+                android:id="@+id/jobType"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="sample"
+                android:padding="5dp"
+                android:layout_marginLeft="10dp"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:textSize="15sp"
+                />
+            <TextView
+                android:id="@+id/jobSchedule"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="sample"
+                android:padding="5dp"
+                android:textSize="13sp"
+                android:textColor="@color/black"
+                android:layout_marginLeft="10dp"
+                android:textStyle="normal" />
+            <TextView
+                android:id="@+id/companyName"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="sample"
+                android:padding="5dp"
+                android:textSize="13sp"
+                android:layout_marginLeft="10dp"
+                android:textStyle="normal"
+                android:textColor="@color/black"
+                />
+            <TextView
+                android:id="@+id/location"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="sample"
+                android:padding="5dp"
+                android:textStyle="normal"
+                android:textSize="13sp"
+                android:textColor="@color/black"
+                android:layout_marginLeft="10dp" />
+            <TextView
+                android:id="@+id/tvApplyNow"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:text="Apply Now"
+                android:textColor="#A91901"
+                android:textStyle="bold"
+                android:padding="5dp"
+                android:layout_margin="5dp"
+                android:gravity="center"
+                android:textSize="13sp"
+                android:background="@drawable/round_button_icon"
+                android:layout_marginLeft="10dp"
+                />
+
+            <TextView
+                android:id="@+id/tvApplied"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Applied"
+                android:textColor="#A91901"
+                android:textStyle="bold"
+                android:padding="5dp"
+                android:visibility="gone"
+                android:layout_marginLeft="10dp"
+                />
+        </LinearLayout>
+
+    </com.google.android.material.card.MaterialCardView>
+
+
+
+</LinearLayout>

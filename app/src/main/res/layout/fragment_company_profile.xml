@@ -1,0 +1,430 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="Apps.Job.Job.Fragment.CompanyProfileFragment">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#F8F5F5"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/ivCompanyImage"
+                    android:layout_width="match_parent"
+                    android:layout_height="220dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="10dp"
+                    android:padding="10dp"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/groupdescussion" />
+
+                <Button
+                    android:id="@+id/btnUpdateCompanyImage"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:layout_gravity="right"
+                    android:layout_marginRight="20dp"
+                    android:padding="5dp"
+                    android:text="Select Profile Picture"
+                    android:textColor="@color/white"
+                    android:textSize="10sp"
+                    android:textStyle="normal"
+                    android:visibility="visible"
+                    />
+            </LinearLayout>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:cardUseCompatPadding="true"
+                app:cardCornerRadius="20dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="-10dp"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:padding="10dp">
+
+
+                        <!--                    <androidx.cardview.widget.CardView-->
+                        <!--                        android:layout_width="match_parent"-->
+                        <!--                        android:layout_height="wrap_content"-->
+                        <!--                        android:layout_marginHorizontal="5dp"-->
+                        <!--                        android:elevation="10dp"-->
+                        <!--                        android:minHeight="80dp"-->
+                        <!--                        app:cardCornerRadius="10dp"-->
+                        <!--                        app:cardUseCompatPadding="true">-->
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="5dp"
+                            android:orientation="vertical">
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="10dp"
+                                android:text="Company Name"
+                                android:textColor="@color/black"
+                                android:textSize="15sp"
+                                android:textStyle="bold" />
+                            <EditText
+                                android:id="@+id/etCompanyName"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@null"
+                                android:hint="Company Name"
+                                android:layout_marginTop="5dp"
+                                android:layout_gravity="center"
+                                />
+                        </LinearLayout>
+                        <!--                    </androidx.cardview.widget.CardView>-->
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:layout_marginTop="10dp"
+                            android:background="@color/black"/>
+
+                        <!--                    <androidx.cardview.widget.CardView-->
+                        <!--                        android:layout_width="match_parent"-->
+                        <!--                        android:layout_height="wrap_content"-->
+                        <!--                        android:layout_marginHorizontal="5dp"-->
+                        <!--                        android:elevation="10dp"-->
+                        <!--                        app:cardCornerRadius="10dp"-->
+                        <!--                        app:cardUseCompatPadding="true">-->
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginTop="5dp"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="10dp"
+                                android:text="Company Type"
+                                android:textColor="@color/black"
+                                android:textSize="15sp"
+                                android:textStyle="bold" />
+
+                            <!--                            <EditText-->
+                            <!--                                android:id="@+id/etCompanyType"-->
+                            <!--                                android:layout_width="match_parent"-->
+                            <!--                                android:layout_height="wrap_content"-->
+                            <!--                                android:background="@null"-->
+                            <!--                                android:hint="Company Type"-->
+                            <!--                                android:paddingBottom="10dp"-->
+                            <!--                                />-->
+
+                            <Spinner
+                                android:id="@+id/companyTypeSpinner"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:entries="@array/company_types"
+                                android:padding="5dp"
+                                android:layout_marginTop="5dp"
+                                android:textColorHint="@color/black" />
+
+                        </LinearLayout>
+                        <!--                    </androidx.cardview.widget.CardView>-->
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:layout_marginTop="5dp"
+                            android:background="@color/black"/>
+
+                        <!--                    <androidx.cardview.widget.CardView-->
+                        <!--                        android:layout_width="match_parent"-->
+                        <!--                        android:layout_height="wrap_content"-->
+                        <!--                        android:layout_marginHorizontal="5dp"-->
+                        <!--                        android:elevation="10dp"-->
+                        <!--                        app:cardCornerRadius="10dp"-->
+                        <!--                        app:cardUseCompatPadding="true">-->
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginTop="5dp"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="20dp"
+                                android:text="Date of establishment"
+                                android:textColor="@color/black"
+                                android:textSize="15sp"
+                                android:textStyle="bold" />
+                            <!--            <EditText-->
+                            <!--                android:id="@+id/etDateOfEstablishment"-->
+                            <!--                android:layout_width="match_parent"-->
+                            <!--                android:layout_height="wrap_content"-->
+                            <!--                android:drawableRight="@drawable/ic_date_range"-->
+                            <!--                android:hint="2005"-->
+                            <!--                android:textColorHint="@color/black"/>-->
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:gravity="left"
+                                android:orientation="horizontal"
+                                android:weightSum="2">
+
+                                <EditText
+                                    android:id="@+id/editTextDate"
+                                    android:layout_width="200dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:clickable="false"
+                                    android:enabled="false"
+                                    android:gravity="left"
+                                    android:paddingLeft="20dp"
+                                    android:hint="2005"
+                                    android:textColor="@color/black"
+                                    android:textColorHint="@color/black"
+                                    android:textStyle="normal" />
+
+                                <!--                         <TextView-->
+                                <!--                             android:id="@+id/chooseDate"-->
+                                <!--                             android:layout_width="wrap_content"-->
+                                <!--                             android:layout_height="wrap_content"-->
+                                <!--                             android:text="choose date"-->
+                                <!--                             android:textColor="@color/black"-->
+                                <!--                             android:paddingHorizontal="10dp"-->
+                                <!--                             android:paddingVertical="5dp"-->
+                                <!--                             android:background="@drawable/buttonroundcorner"-->
+                                <!--                             android:backgroundTint="@color/custom_gray"-->
+                                <!--                             android:layout_marginHorizontal="10dp"-->
+                                <!--                             />-->
+
+                                <ImageView
+                                    android:id="@+id/ivShowDate"
+                                    android:layout_width="30dp"
+                                    android:layout_height="30dp"
+                                    android:layout_gravity="center"
+                                    android:layout_weight="0.1"
+                                    android:scaleType="fitXY"
+                                    android:src="@drawable/ic_date_range" />
+                            </LinearLayout>
+                        </LinearLayout>
+                        <!--                    </androidx.cardview.widget.CardView>-->
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:layout_marginTop="5dp"
+                            android:background="@color/black"/>
+
+                        <!--                    <androidx.cardview.widget.CardView-->
+                        <!--                        android:layout_width="match_parent"-->
+                        <!--                        android:layout_height="wrap_content"-->
+                        <!--                        android:layout_marginHorizontal="5dp"-->
+                        <!--                        android:elevation="10dp"-->
+                        <!--                        app:cardCornerRadius="10dp"-->
+                        <!--                        app:cardUseCompatPadding="true">-->
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="5dp"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="20dp"
+                                android:text="Webiste"
+                                android:textColor="@color/black"
+                                android:textSize="15sp"
+                                android:textStyle="bold" />
+
+                            <EditText
+                                android:id="@+id/etWebsite"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@null"
+                                android:hint="Company Website"
+                                android:paddingBottom="10dp"
+                                />
+                        </LinearLayout>
+                        <!--                    </androidx.cardview.widget.CardView>-->
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:layout_marginTop="5dp"
+                            android:background="@color/black"/>
+
+                        <!--                    <androidx.cardview.widget.CardView-->
+                        <!--                        android:layout_width="match_parent"-->
+                        <!--                        android:layout_height="wrap_content"-->
+                        <!--                        android:layout_marginHorizontal="5dp"-->
+                        <!--                        android:elevation="10dp"-->
+                        <!--                        app:cardCornerRadius="10dp"-->
+                        <!--                        app:cardUseCompatPadding="true">-->
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="5dp"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="20dp"
+                                android:text="Email"
+                                android:textColor="@color/black"
+                                android:textSize="15sp"
+                                android:textStyle="bold" />
+
+                            <EditText
+                                android:id="@+id/etEmail"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@null"
+                                android:hint="Company Email"
+                                android:paddingBottom="10dp" />
+                        </LinearLayout>
+                        <!--                    </androidx.cardview.widget.CardView>-->
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:layout_marginTop="5dp"
+                            android:background="@color/black"/>
+
+                        <!--                    <androidx.cardview.widget.CardView-->
+                        <!--                        android:layout_width="match_parent"-->
+                        <!--                        android:layout_height="wrap_content"-->
+                        <!--                        android:layout_marginHorizontal="5dp"-->
+                        <!--                        android:elevation="10dp"-->
+                        <!--                        app:cardCornerRadius="10dp"-->
+                        <!--                        app:cardUseCompatPadding="true">-->
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="5dp"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="20dp"
+                                android:text="Contact No"
+                                android:textColor="@color/black"
+                                android:textSize="15sp"
+                                android:textStyle="bold" />
+
+                            <EditText
+                                android:id="@+id/etContactNo"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@null"
+                                android:hint="Contact Number"
+                                android:inputType="number"
+                                android:maxLength="10"
+                                android:imeOptions="actionDone"
+                                android:paddingBottom="10dp" />
+                        </LinearLayout>
+                        <!--                    </androidx.cardview.widget.CardView>-->
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:background="@color/black"/>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:gravity="center"
+                            android:orientation="vertical"
+                            android:weightSum="2">
+
+                            <Button
+                                android:id="@+id/btnViewDocument"
+                                android:layout_width="match_parent"
+                                android:layout_height="50dp"
+                                android:layout_margin="10dp"
+                                android:layout_weight="1"
+                                android:text="View Document"
+                                android:textColor="@color/white"
+                                android:backgroundTint="@color/blue"
+                                android:textSize="12sp"
+                                android:textStyle="bold" />
+
+                            <Button
+                                android:id="@+id/btnUpdateCompanyProof"
+                                android:layout_width="match_parent"
+                                android:layout_height="50dp"
+                                android:layout_margin="10dp"
+                                android:layout_weight="1"
+                                android:text="Select Document"
+                                android:backgroundTint="@color/gnt_ad_green"
+                                android:drawableEnd="@drawable/ic_edit_24"
+                                android:drawableTint="@color/white"
+                                android:textColor="@color/white"
+                                android:textSize="10sp"
+                                android:textStyle="bold" />
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <Button
+                android:id="@+id/btnSaveData"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_margin="10dp"
+                android:layout_weight="1"
+                android:text="Save"
+                android:textColor="@color/white"
+                android:textSize="12sp"
+                android:textStyle="bold" />
+
+
+            <!--         <Button-->
+            <!--             android:id="@+id/btnLogOut"-->
+            <!--             android:layout_width="wrap_content"-->
+            <!--             android:layout_height="wrap_content"-->
+            <!--             android:text="Log Out"-->
+            <!--             android:layout_marginTop="30dp"-->
+            <!--             android:layout_gravity="center|bottom"-->
+            <!--             android:textColor="@color/custom_gray"-->
+            <!--             android:textSize="15sp"-->
+            <!--             android:textStyle="bold" />-->
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

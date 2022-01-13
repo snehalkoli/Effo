@@ -1,0 +1,86 @@
+<resources>
+    <string name="app_name">EFFO</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_home">HomeActivity</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="menu_home">Home</string>
+    <string name="menu_gallery">Gallery</string>
+    <string name="menu_slideshow">Slideshow</string>
+
+    <string name="open">OPEN</string>
+    <string name="close">CLOSE</string>
+
+    <string name="email">contact.effo@thevendorclub.com</string>
+    <string name="website">visit our website</string>
+
+    <array name="company_types">
+        <item>Select Company Type</item>
+        <item>Software Company</item>
+        <item>Hardware Company</item>
+        <item>Networking Company</item>
+        <item>IT Company</item>
+        <item>Private Company</item>
+        <item>One Person Company</item>
+        <item>Public Company</item>
+        <item>Company Limited by Shares</item>
+        <item>Unlimited Company</item>
+        <item>Foreign Company</item>
+        <item>Section 8 Company</item>
+        <item>Producer Company</item>
+        <item>Small Company</item>
+        <item>Subsidiary Company</item>
+        <item>Holding Company</item>
+    </array>
+
+    <array name="job_title_list">
+        <item>Select Job Title</item>
+        <item>Account Manager</item>
+        <item>Account Services Executive</item>
+        <item>Accountant</item>
+        <item>Accounts Assistant/ Book Keeper</item>
+        <item>Accounts Head/ GM - Accounts</item>
+        <item>Actuary</item>
+        <item>Admin - Executive</item>
+        <item>Admin - Head/ Manager</item>
+        <item>Advertising - Executive</item>
+        <item>Advertising - Manager</item>
+        <item>Advisory</item>
+        <item>Business Analyst</item>
+        <item>Business Center Manager</item>
+        <item>Business Editor</item>
+        <item>Business Writer</item>
+        <item>Cameraman</item>
+        <item>Cash Management Operations</item>
+        <item>Cash Officer/ Manager</item>
+        <item>Cashier</item>
+        <item>Data Management/ Statistics</item>
+        <item>Database Administrator (DBA)</item>
+        <item>Database Architect/ Designer</item>
+        <item>Datawarehousing Consultants</item>
+        <item>Depository Participant</item>
+        <item>Derivatives Analyst</item>
+    </array>
+
+
+    <string name="about_us">Effo news app is the Marathi short news app. We
+delivers society and politics related updates. We
+produce &amp; distribute short format content for Marathi
+audience. We collect news from various trust worthy
+sources We love helping you bring ideas to life.We want to
+grow every day. Our goal is to offer the best high-quality
+content: illustrations, photos, icons, mockups, and
+presentations templates.
+</string>
+    <string name="channel_name">EffoGNews</string>
+    <string name="channel_description">Breaking news</string>
+    <string name="if_you_want_to_apply_this_job_create_your_profile">If you want to apply this \n job create your profile</string>
+    <string name="mobile_number">Mobile Number</string>
+    <string name="no_of_openings">Number of Openings</string>
+</resources>

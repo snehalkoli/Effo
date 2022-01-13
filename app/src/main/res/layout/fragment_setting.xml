@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff"
+    tools:context=".Apps.News.fragments.Setting"
+    android:orientation="vertical">
+
+
+<!--    <ImageView-->
+<!--        android:layout_width="100dp"-->
+<!--        android:layout_height="70dp"-->
+<!--        android:background="@drawable/ic_coming_soon"-->
+<!--        android:layout_gravity="center"-->
+<!--        android:gravity="bottom" />-->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/l1"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:background="@color/blue">
+        <Button
+            android:id="@+id/LogIn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="100dp"
+            android:layout_marginLeft="30dp"
+            android:backgroundTint="@color/white"
+            android:text="Log In"
+            android:textSize="30dp"
+            android:textColor="@color/blue"/>
+    </LinearLayout>
+        <TableRow
+            android:id="@+id/tableRow"
+            android:layout_below="@+id/l1"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="15dp"
+            android:background="#BCBBBB"/>
+        <LinearLayout
+            android:id="@+id/l2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_below="@+id/tableRow">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="0sp"
+                android:layout_weight="1"/>
+
+        </LinearLayout>
+        <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_below="@+id/l2"
+            android:background="@color/back_black">
+            <TextView
+                android:id="@+id/text1"
+                android:layout_width="match_parent"
+                android:layout_height="0sp"
+                android:layout_weight="1"
+                android:text="Share This App"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="10dp"
+                android:textSize="20dp"/>
+<!--            <TableRow-->
+<!--                android:id="@+id/tableRow2"-->
+<!--                android:layout_below="@+id/l1"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="1dp"-->
+<!--                android:background="#BCBBBB"-->
+<!--                android:layout_marginTop="15dp" />-->
+            <TextView
+                android:id="@+id/text2"
+                android:layout_width="match_parent"
+                android:layout_height="0sp"
+                android:layout_weight="1"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="30dp"
+                android:text="Rate This App"
+                android:textSize="20dp"/>
+<!--            <TableRow-->
+<!--                android:id="@+id/tableRow3"-->
+<!--                android:layout_below="@+id/l1"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="1dp"-->
+<!--                android:background="#BCBBBB"-->
+<!--                android:layout_marginTop="15dp" />-->
+            <TextView
+                android:id="@+id/text3"
+                android:layout_width="match_parent"
+                android:layout_height="0sp"
+                android:layout_weight="1"
+                android:layout_marginLeft="30dp"
+                android:text="Feedback"
+                android:textSize="20dp"
+                android:layout_marginTop="40dp"/>
+            <TextView
+                android:id="@+id/text4"
+                android:layout_width="match_parent"
+                android:layout_height="0sp"
+                android:layout_weight="1"
+                android:layout_marginLeft="30dp"
+                android:text="Terms and Conditions"
+                android:textSize="20dp"
+                android:layout_marginTop="40dp"/>
+    </LinearLayout>
+    </RelativeLayout>
+
+
+
+
+
+</FrameLayout>

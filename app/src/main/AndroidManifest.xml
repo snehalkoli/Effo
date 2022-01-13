@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.ftg2021.effo2021V1">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.MANAGE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+
+    <application
+        android:icon="@mipmap/ic_launcher_logo_tm_final"
+        android:requestLegacyExternalStorage="true"
+        android:roundIcon="@mipmap/ic_launcher_logo_tm_final"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.EffoNews"
+        android:usesCleartextTraffic="true">
+        <activity
+            android:name=".Apps.Job.Job.Activity.PostJobs.JobPostHere"
+            android:exported="false" />
+        <activity
+            android:name=".Apps.maintainance.Activity.Vendor_OrderDetails"
+            android:exported="false" />
+        <activity
+            android:name=".Apps.maintainance.Activity.Vendor_Profile"
+            android:exported="false" />
+        <activity
+            android:name=".Apps.maintainance.Activity.Vendor_MainScreen"
+            android:exported="false" />
+        <activity
+            android:name=".Apps.maintainance.Activity.Vendor_UploadDocument"
+            android:exported="false" />
+        <activity
+            android:name=".Apps.maintainance.Activity.Vendor_SelectProfession"
+            android:exported="false" />
+        <activity
+            android:name=".Apps.maintainance.Activity.ChooseMaintananceUser"
+            android:exported="false" />
+        <activity
+            android:name=".Authentication.Register.Activity.RegisterUserToDatabase"
+            android:exported="false" />
+        <activity
+            android:name=".Authentication.Register.Activity.OtpVerification"
+            android:exported="false" />
+        <activity
+            android:name=".Authentication.Register.Activity.RegisterWithPhoneNumber"
+            android:exported="false" />
+        <activity
+            android:name=".Apps.Job.Job.Activity.UserLogOutActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Apps.Job.Job.Activity.LogOutActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Apps.Job.Job.Activity.FindJobs.AllJobs"
+            android:exported="false" />
+        <activity
+            android:name=".Apps.Job.Job.Activity.Candidate"
+            android:exported="false" />
+        <activity
+            android:name=".Apps.Job.Job.Activity.FindJobs.EmployeeProfile"
+            android:exported="false" />
+        <activity
+            android:name=".Apps.Job.Job.Activity.PostJobs.CompanyProfile"
+            android:exported="false" />
+        <activity
+            android:name=".Apps.Job.Job.Activity.CreateProfile"
+            android:exported="false" />
+        <activity
+            android:name=".Apps.Job.Job.Activity.FindJobs.CreateEmployeeProfileActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Apps.Job.Job.Activity.EmployeeActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Apps.Job.Job.Activity.JobActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Apps.Job.Job.Activity.PostJobs.PostJobDetailStep2"
+            android:exported="false" />
+        <activity
+            android:name=".Apps.Job.Job.Activity.PostJobs.PostJobDetailStep1"
+            android:exported="false" />
+        <activity
+            android:name=".Apps.Job.Job.Activity.FindJobs.JobDetails"
+            android:exported="false" />
+        <activity
+            android:name=".Apps.Job.Job.Activity.Choose_FindOrPostJob"
+            android:exported="false" />
+        <activity
+            android:name=".Apps.Job.Job.Activity.PostJobs.ActivityCompanyMainScreen_PostJobs"
+            android:exported="false" />
+        <activity
+            android:name=".Apps.Job.Job.Activity.RecommendedCandidates"
+            android:exported="false" />
+        <activity
+            android:name=".Apps.Job.Job.Activity.ApplicationSentMessage"
+            android:exported="false" />
+        <activity
+            android:name=".Apps.TwentyFourBySeven.TwentyFourBySevenMainActivity"
+            android:exported="false" />
+        <activity
+            android:name=".AppList.AppList"
+            android:exported="false" />
+        <activity
+            android:name=".Apps.Job.Job.Activity.FindJobs.OpenPdfActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Apps.Job.Job.Activity.FindJobs.AppliedJobsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Apps.Job.Job.Activity.FindJobs.AppliedJobDetailsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Authentication.Register.Activity.DisplayMyProfileActivity"
+            android:exported="false" />
+        <activity
+            android:name=".SplashScreen"
+            android:configChanges="orientation"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Apps.News.NewsMainActivity"
+            android:configChanges="orientation"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" />
+
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="com.anni.shareimage.fileprovider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/paths" />
+        </provider>
+
+        <service
+            android:name=".Apps.News.FirebasePushNotification.FirebaseRegisterToken"
+            android:directBootAware="true"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+        <meta-data
+            android:name="com.google.android.gms.ads.APPLICATION_ID"
+            android:value="ca-app-pub-9439361057173176~8417416309" />
+    </application>
+
+</manifest>

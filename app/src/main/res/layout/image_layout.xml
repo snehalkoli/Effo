@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+<!--        <ImageView-->
+<!--            android:id="@+id/ivCompanyDocumentImage"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="match_parent"-->
+<!--            android:scaleType="fitXY"-->
+<!--            android:layout_centerInParent="true"-->
+<!--            android:src="@drawable/groupdescussion"/>-->
+
+<!--        <com.ftg2021.effo2021V1.Apps.Job.Job.Activity.FindJobs.ZoomableImageView-->
+<!--            android:id="@+id/ivCompanyDocumentImage"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="match_parent"/>-->
+
+        <com.ftg2021.effo2021V1.Apps.Job.Job.Activity.FindJobs.TouchImageView
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/ivCompanyDocumentImage"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="fitXY"
+            android:clickable="true"
+            android:focusable="true" />
+
+</RelativeLayout>

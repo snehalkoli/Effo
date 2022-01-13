@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+android:id="@+id/layout"
+android:layout_width="match_parent"
+android:layout_height="40dp">
+<!--    android:background="@drawable/background_notification"-->
+
+
+    <ImageView
+        android:id="@+id/image"
+        android:layout_width="45dp"
+        android:layout_height="40dp"
+        android:layout_alignParentLeft="true"
+        android:layout_centerInParent="true"
+        android:background="@drawable/tm_logo" />
+
+<!--    <TextView-->
+<!--        android:id="@+id/title"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_marginLeft="10dp"-->
+<!--        android:layout_toEndOf="@id/image"-->
+<!--        android:layout_toRightOf="@id/image"-->
+<!--        android:text="Effo News"-->
+<!--        android:textColor="#000"-->
+<!--        android:textSize="14sp"-->
+<!--        android:textStyle="bold" />-->
+
+<TextView
+    android:id="@+id/text"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_centerVertical="true"
+    android:layout_marginLeft="5dp"
+    android:layout_toStartOf="@+id/news_image"
+    android:layout_toLeftOf="@+id/news_image"
+    android:layout_toEndOf="@id/image"
+    android:layout_toRightOf="@id/image"
+    android:ellipsize="marquee"
+    android:maxLines="2"
+    android:text="Effo News"
+    android:textColor="#000"
+    android:textSize="14sp" />
+<ImageView
+    android:id="@+id/news_image"
+    android:layout_width="55dp"
+    android:layout_height="40dp"
+    android:layout_alignParentRight="true"
+    android:layout_centerInParent="true"
+    android:scaleType="fitXY" />
+
+</RelativeLayout>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+
+    <item
+        android:id="@+id/aboutUs"
+        android:title="About Us"
+        android:icon="@drawable/ic_information"/>
+
+
+    <item
+        android:id="@+id/privacy"
+        android:title="App Policy"
+        android:icon="@drawable/ic_baseline_refresh_24"/>
+<!--    <item-->
+<!--        android:id="@+id/setting"-->
+<!--        android:title="Setting"-->
+<!--        android:icon="@drawable/ic_setting"/>-->
+
+
+
+</menu>

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<font-family xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <!-- regular -->
+    <font
+        android:font="@font/ams_handwriting"
+        android:fontStyle="normal"
+        android:fontWeight="400"
+
+        app:font="@font/ams_handwriting"
+        app:fontStyle="normal"
+        app:fontWeight="400" />
+
+    <!-- italic -->
+    <font
+        android:font="@font/marathi_mon"
+        android:fontStyle="italic"
+        android:fontWeight="400"
+
+        app:font="@font/marathi_mon"
+        app:fontStyle="italic"
+        app:fontWeight="400" />
+
+    <!-- bold -->
+    <font
+        android:font="@font/marathi_mon"
+        android:fontStyle="normal"
+        android:fontWeight="700"
+
+        app:font="@font/marathi_mon"
+        app:fontStyle="normal"
+        app:fontWeight="700" />
+</font-family>

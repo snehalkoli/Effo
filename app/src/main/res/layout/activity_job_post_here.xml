@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Apps.Job.Job.Activity.PostJobs.ActivityCompanyMainScreen_PostJobs">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="69dp">
+
+        <ImageView
+            android:id="@+id/imageView4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginTop="13dp"
+            android:layout_marginEnd="19dp"
+            android:layout_marginBottom="21dp"
+            app:srcCompat="@drawable/ic_baseline_notifications_24" />
+
+    </RelativeLayout>
+
+    <FrameLayout
+        android:id="@+id/Framelayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="592dp"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="83dp"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+
+
+
+                <Button
+                    android:id="@+id/PostJobHere"
+                    android:layout_width="245dp"
+                    android:layout_height="48dp"
+                    android:layout_gravity="end|center"
+                    android:layout_marginEnd="10dp"
+                    android:background="@drawable/background_with_shadow"
+                    android:backgroundTint="@color/appRed"
+                    android:drawableLeft="@drawable/ic_baseline_add_circle_outline_24"
+                    android:drawableTint="@color/white"
+                    android:gravity="center"
+                    android:padding="5dp"
+                    android:paddingLeft="40dp"
+                    android:text="POST JOB HERE"
+                    android:textAllCaps="false"
+                    android:textSize="16dp"
+                    android:textStyle="bold"
+                    app:icon="@drawable/ic_baseline_arrow_forward_24"
+                    app:iconGravity="end"
+                    app:iconSize="50dp" />
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/imageView2"
+                android:layout_width="match_parent"
+                android:layout_height="523dp"
+                app:srcCompat="@drawable/postjobimage" />
+        </LinearLayout>
+
+    </FrameLayout>
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottom_navigation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/cardview_light_background"
+        app:labelVisibilityMode="selected"
+        app:menu="@menu/menu1" >
+
+    </com.google.android.material.bottomnavigation.BottomNavigationView>
+
+
+</LinearLayout>

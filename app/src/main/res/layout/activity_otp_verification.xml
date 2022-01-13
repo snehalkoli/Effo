@@ -1,0 +1,245 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/white"
+    tools:context=".Authentication.Register.Activity.OtpVerification">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_gravity="center">
+
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:minHeight="500dp"
+            app:cardBackgroundColor="#FDFCFC"
+            app:cardCornerRadius="15dp"
+            app:cardElevation="10dp"
+            app:cardUseCompatPadding="true">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:orientation="vertical"
+                android:padding="20dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="20dp"
+                    android:layout_marginBottom="10dp"
+                    android:orientation="vertical">
+
+
+                    <GridLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:columnCount="2"
+                        android:rowCount="1">
+
+                        <GridLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content">
+
+                        </GridLayout>
+
+
+                    </GridLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="0dp"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:id="@+id/imageView"
+                            android:layout_width="200dp"
+                            android:layout_height="150dp"
+                            android:layout_marginTop="20dp"
+                            android:scaleType="centerCrop"
+                            android:layout_gravity="center"
+                            android:layout_weight="0.1"
+                            android:background="@drawable/tm_logo" />
+
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:gravity="center"
+                            android:text="Enter OTP"
+                            android:textColor="#797979"
+                            android:textSize="20sp"
+                            android:visibility="gone"
+                            android:textStyle="bold">
+
+                        </TextView>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginTop="25dp"
+                            android:gravity="center"
+                            android:singleLine="false"
+                            android:text="OTP Verification"
+                            android:textAlignment="center"
+                            android:textColor="@color/black"
+                            android:textStyle="bold"
+                            android:textSize="17sp">
+
+                        </TextView>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/mobileNum"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginVertical="10dp"
+                            android:layout_marginTop="10dp"
+                            android:text="+91 "
+                            android:textAlignment="center"
+                            android:textColor="@color/custom_gray"
+                            android:textSize="20dp">
+
+                        </TextView>
+
+
+                    </LinearLayout>
+
+
+<!--                    <EditText-->
+<!--                        android:id="@+id/otpEditText"-->
+<!--                        android:layout_width="match_parent"-->
+<!--                        android:layout_height="50dp"-->
+<!--                        android:layout_marginHorizontal="30dp"-->
+<!--                        android:layout_marginVertical="10dp"-->
+<!--                        android:backgroundTint="@color/custom_gray"-->
+<!--                        android:gravity="center"-->
+<!--                        android:hint="Enter OTP"-->
+<!--                        android:maxLength="6"-->
+<!--                        android:maxLines="1"-->
+<!--                        android:textColor="@color/black"-->
+<!--                        android:textColorHint="@color/custom_gray"-->
+<!--                        android:textSize="15sp" />-->
+
+        <com.goodiebag.pinview.Pinview
+            android:id="@+id/otpEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:pinWidth="25dp"
+            android:minHeight="20dp"
+            app:pinLength="6"
+            app:cursorVisible="true"
+            app:forceKeyboard="true"
+            android:layout_marginTop="20dp"
+            app:inputType="number"/>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:layout_marginTop="20dp"
+                        android:orientation="vertical">
+
+<!--                        <TextView-->
+<!--                            android:id="@+id/submit2"-->
+<!--                            android:layout_width="250dp"-->
+<!--                            android:layout_height="48dp"-->
+<!--                            android:layout_marginVertical="5dp"-->
+<!--                            android:background="@drawable/background_with_shadow"-->
+<!--                            android:elevation="2dp"-->
+<!--                            android:fadingEdgeLength="12dp"-->
+<!--                            android:foregroundGravity="center"-->
+<!--                            android:gravity="center"-->
+<!--                            android:onClick="sub2"-->
+<!--                            android:text="Verify"-->
+<!--                            android:textColor="@color/white"-->
+<!--                            android:textSize="18sp"-->
+<!--                            android:textStyle="bold"-->
+<!--                            tools:ignore="OnClick">-->
+<!--                        </TextView>-->
+
+                        <Button
+                            android:id="@+id/submit2"
+                            android:layout_width="250dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginTop="10dp"
+                            android:background="@drawable/background_with_shadow"
+                            android:text="Verify"
+                            android:textAllCaps="false"
+                            android:textColor="@color/white"
+                            android:textStyle="normal"
+                            android:textSize="18sp" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:weightSum="2"
+                            android:layout_marginTop="10dp"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:id="@+id/tvShowTimer"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="left"
+                                android:gravity="left"
+                                android:textColor="@color/black"
+                                android:layout_marginLeft="20dp"
+                                android:layout_weight="1"
+                                android:textStyle="normal"
+                                android:visibility="visible"/>
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:gravity="center"
+                                android:text="Resend OTP"
+                                android:textColor="@color/black"
+                                android:layout_weight="1"
+                                android:visibility="gone"/>
+                        </LinearLayout>
+
+
+                        <TextView
+                            android:id="@+id/resend"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:gravity="center"
+                            android:text="Resend"
+                            android:textColor="@color/black"
+                            android:visibility="gone">
+
+                        </TextView>
+                    </LinearLayout>
+
+
+                </LinearLayout>
+            </LinearLayout>
+        </com.google.android.material.card.MaterialCardView>
+</RelativeLayout>
+
+</RelativeLayout>
